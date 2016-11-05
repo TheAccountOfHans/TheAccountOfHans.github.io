@@ -17,17 +17,19 @@
 <body>
 <div class="content">
 	<center>
+	<div style="max-width:610px; word-wrap:break-word;">
 	
 	<h2>Hans Gregersen's Super Well-Done Web Page</h2>
 	
+	Makes games, knows Justin Jackson<br>
 	hans.ee.gregersen@gmail.com
 	
 	<hr>
 	<i><b>Currently working on:</b> A top-down action game called "Yarkas". I have no clue what "Yarkas" means.</i>
 	<hr>
 	
-	<div style="max-width:610px; word-wrap:break-word;">
-	Virtually all of my time is spent making or playing games.
+	Virtually all of my time is spent making or playing games. I've been "playing" Cookie Clicker for
+	<a href="http://i.imgur.com/KvGW0mP.jpg">3 years straight</a> somehow.
 	<br><br>
 	I started making games in Game Maker around 2003, when I was 9. Over the years I moved from it's drag & drop-styled
 	visual programming, to GML, to a brief stint with Blitz BASIC for a Grade 11 course, to Unity in 2013, which I use
@@ -42,18 +44,148 @@
 	TIE Fighter arcade game, released under a psuedonym because it is definitely not a huge copyright infringement
 	that could incur the wrath of certain companies. Tell all your friends!
 	<br><br>
-	Below are some links to videos of my various projects from recent years.
-	</div>
+	Below are some links to videos of my various projects from recent years. You may sense some mad desire to make a Star Wars game.
+	I can assure you that you are totally off base and should consider seeing a psychiatrist.
+	<!</div>
 	
 	<hr>
 	
+	<!<div style="max-width:610px; word-wrap:break-word;">
 	<p>
-	<b>Helpful Links:</b>
+	<b>Projects in order unknown (And what I learned from them)</b>
 	<br>
-	Justin wants me to put links here
+	
+	<hr>
+	
+	<a href="https://www.youtube.com/watch?v=JSFbFLCjvwg"><b>Star Destroyer Oculus Rift Demo (Stereoscopy, Framerate in VR)</b></a>
 	<br>
-	All will come, in time
+	By far the most popular thing I ever released, this allowed users to step onto the bridge of a Star Destroyer as it entered a battle.
+	I learned a lot about scale, here. It's very hard to convey, but stereoscopy means those ships actually appear to be a mile long.
+	What I took to heart from this, though, after having issues with LOD and framerate (But never got to apply to this specific project),
+	is that the use of multiple cameras and cascading shadows is completely necessary to keep even a semblance of a steady framerate, and that,
+	in VR, without that, you are truly in for some pain.
+	<br>
+	
+	<hr>
+	
+	<a href="https://www.youtube.com/watch?v=N3ArSrl7n7A"><b>TIE (Flight AI, Don't use prototype code in a final project)</b></a>
+	<br>
+	By far the least-seen-but-probably-would've-done-well-if-it-had-been thing I ever released, this was an arcade-ish simulator-ish space combat game allowing
+	the player to engage unending waves of rebel ships from the cockpit of their TIE Fighter. This was a huge, huge lesson in classes, states, getting angles
+	around specific axes, and why you shouldn't build on top of your wild-west prototype code as a finished product. I have an update in the works but honestly,
+	the base code is so jumbled and flawed due to my rapid-prototyping-turned-release, it would genuinely be easier to rewrite it with everything I've learned.
+	I released it under a psuedonym to avoid a direct connection to me in event of Disney finding out and being displeased. So uh... don't tell them, okay?
+	Honestly, the AI for this is pretty basic but can provide quite a challenge to the player later into the game, while remarkebly retaining the feel
+	of one of the battles from the movies. Due to excluding yaw, the ships must first roll until their target direction
+	is along their vertical axis, then pull up. A lot of tweaking and fudging ensued to get a halfway-decent AI. Unfortunately, they were not very good at
+	avoiding collisions and so some workarounds were made to simply fool the player into thinking they avoided collisions instead of them blowing up all the time.
+	I've got a new system for that in mind that could theoretically work: By sending out detection whiskers a decent distance, and turning to a direction
+	that's basically the incoming angle reflected off the collider's normal, the AI would theoretically be able to handle a lot of collision events,
+	excluding complex geometry, while still being able to smoothly track their targets and setting up some pretty cool chases along the surface of a Super Star Destroyer.
+	<br>
+	
+	<hr>
+	
+	<a href="https://www.youtube.com/watch?v=H7Ai8XE_azs"><b>AT-ST (Animation, Physics)</b></a>
+	<br>
+	This was a bit of a test in physics and animations using mathematical curves, as well as in creating fancy particles.
+	I experimented with having the motion and other physics driven by the animations themselves, and this is the result.
+	I learned a lot about Rigidbodies, and why you should hire an animator instead of using math.
+	<br>
+	
+	<hr>
+	
+	<a href="https://www.youtube.com/watch?v=OZSPc_wdNHc"><b>Warden (Animation, Dynamic sound)</b></a>
+	<br>
+	This immediately followed my AT-ST test after a friend implied I couldn't make original designs and relied on Star Wars as a crutch.
+	Well, he's right, but the resulting project was this WWI-era mech, animated without math this time. The main focus of this project became
+	the walking sound of the mech, and how to create a unique sound profile that would work in any situation you put it in. Instead of
+	creating a unique, "baked" sound effect, what you hear in this video is each joint of each leg scraping and squeaking based on
+	its rotational velocity, using a single scraping loop and pitching and changing the audio. I'd like to revisit this idea someday,
+	preferably as a moody combat simulator in VR.
+	<br>
+	
+	<hr>
+	
+	<a href="https://youtu.be/XVdEIE0NdfQ"><b>Tank Game (Drawing to textures, Gameplay before polish)</b></a>
+	<br>
+	This was me trying to make something suitably 90's to fit my obssession with games in a 90's style (Hence the bitcrushed audio and pixelized 3D),
+	and one of my few attempts at a 2-player splitscreen game. The players are tanks on a battlefield, attempting to hunt down the other
+	player and exterminate them. The biggest advancement was the use of drawing on textures to make persistent tread tracks and other patterns in the
+	sand. While my solution here is fairly low-res, a smaller map, or the use of multiple textures, would've allowed for good performance and a better-looking
+	effect overall. I was fully ready to release this game until my friend came over to playtest it with me, and I found out two things:<br><br>
+	1: This isn't very fun, and<br><br>
+	2: Never let anyone have the ability to paint the terrain because they will realise they can paint offensive things as long as you don't find them for a while.<br><br>
+	On point 1, looking back, I think I could actually make this a more tense, fun game by reducing the fire-rate on the weapons and massively increasing their damage.
+	As well, the tanks were fairly difficult to control and tended to get more airtime than I wanted. This was something I skirted
+	around in a later project, Tank Touge, by adding what might be called "Suspension" but may better be referred to as "Was there's a collision there? Let's ignore
+	THAT for a few frames". On point 2, well, it's SLIGHTLY OFFENSIVE, but as long as your friend isn't a massive edgelord it'll probably be more funny than
+	anything to crest a hill during your mad search for your opponent and see something like <a href="http://i.imgur.com/yhqE3QB.png">this</a> (Profane language warning).
+	<br>
+	
+	<hr>
+	
+	<a href="https://www.youtube.com/watch?v=9k6MZcpIHE4"><b>Robit (Animation, Character locomotion)</b></a>
+	<br>
+	(Sorry about the 80's music)<br>
+	This was a test for a character action game in a PS1 aesthetic, which started quickly after Warden, as I'd just learned rudimentary animation.
+	I learned a bit about shaders, camera-relative directional input, and messing with physics to produce something that works as a player would
+	expect, rather than as physics would demand. Later additions included wall-running, toxic liquids, and rope-swinging after reading a blog
+	by the person behind Spider-Man 2's web-swinging physics.
+	<br>
+	
+	<hr>
+	
+	<a href="https://www.youtube.com/watch?v=521PMcvUYQo"><b>Tank Touge (Cheating physics, GUI)</b></a><br>
+	<a href="https://www.youtube.com/watch?v=ZCd2rRibFRU"><b>(Second Video)</b></a>
+	<br>
+	(Sorry about the 90's music)<br>
+	This was based on a <a href="https://www.youtube.com/watch?v=tnTVbsfixfM">video</a> a friend sent me. Over the course of a couple of days
+	and with the use of assets from Tank Game, I created a prototype of a game where you drift various eras of tanks against another player,
+	scoring more points by executing better drifts and finishing the course faster than them, whilst using your cannon to provide a boost and potentially
+	slow down the player behind you. Then I realised I didn't want to spend the time to create an actual track and lost interest. Unlike an earlier
+	game prototype about drifting, I ignored wheel colliders and actual vehicle physics because I don't know enough about cars, and focused instead
+	on providing nice-feeling fake-physics whilst doing my best to avoid flinging the rigidbody across the world. As you can see in the first video,
+	I had some problems with flickering GUI elements which were solved by the second video. Never move your GUI, kids.
+	<br>
+	
+	<hr>
+	
+	<a href="https://www.youtube.com/watch?v=Qj5ptFLqr8A"><b>Various VR Tests (Animation, Stereoscopy)</b></a><br>
+	<a href="https://www.youtube.com/watch?v=6XA9W7O0-1E"><b>(Second Video)</b></a>
+	<br>
+	These occurred shortly after I received my Oculus Rift DK1.<br>
+	The first video occurred after experimenting with 2D animation and states with a 2D game for a game jam on a small website. This would've been
+	some kind of game about captaining a starship as it went about the galaxy, but I never got very far with it. I like the 2.5D presentation the most.<br>
+	The second video was an attempt to have control over the actions of a held weapon in a first person game without motion controllers involved, as
+	they had not yet been released (Or invented) at the time. Essentially, the weapon would switch between a lowered, aimed, and reloaded position
+	based on the angle of the player's head. By leaning right, as if aiming down the sights, the weapon would move into position, allowing the player
+	to actually aim down the sites. By looking another direction, the player could look down the magazine and see if they were out of ammo. By
+	remaining looking in that direction, the magazine would automatically drop and a new one would be loaded.<br>
+	Pretty much every game I work on has some kind of plans for VR support, but due to Oculus retroactively breaking DK1 support, my later experiments never
+	show this.
+	<br>
+	
+	<hr>
+	
+	<a href="https://youtu.be/CKX7-R7au30"><b>LAAT (Physics, LOD)</b></a>
+	<br>
+	This is the simulator I've always wanted. Essentially, the player pilots an LAAT/i troop transport from Star Wars during the Battle of Geonosis,
+	dropping troops and providing fire support at key locations to turn the tide of the battle. I learned a lot about flight physics here, because my primary
+	goal was to perfectly emulate what I saw on the screen, but in gameplay. I based the physics off of a hypothetical helicopter whose rotor could pitch and roll a
+	generous amount away from the vertical axis, providing more forward than vertical thrust the more pitched down/up you were. The resulting system was actually
+	incredibly intuitive and easy to fly (At least by my standards). I also learned a bit about the LOD system. Since I was using a huge map and wanted a fairly dense
+	world, I realised early on that I'd need to make use of Unity's LOD system to prevent massive slowdowns, and was mostly successful. I planned to populate the
+	battlefield with ground troops and units dynamically, popping them in depending on your distance from the ground and your location on the map. Unfortunately, I
+	realised the game would've been better suited as a more tightly-focused set of missions rather than a single, open-ended mission, and soon moved on. I have plans
+	for essentially that using my own IP, but it's not something I'm currently seriously working on. If you're wondering, you're a VTOL craft shot from a carrier
+	ship in orbit directly into enemy airspace. It'll be dope.
+	<br>
+	
+	<hr>
+	
 	</p>
+	</div>
 	
 	</center>
 </div>
@@ -67,4 +199,4 @@
 
 </html>
 
-<!The ovaltine joke is overplayed!>
+<!This is a huge mess because I'm using Notepad++ and what knowledge I have from my Grade 9 course in HTML. Also, something about ovaltine.
